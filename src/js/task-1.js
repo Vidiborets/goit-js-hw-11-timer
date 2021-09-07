@@ -1,4 +1,4 @@
-const daysRef = document.querySelector('[data-value="days"]')
+const daysRef = document.querySelector('#hour')
 const hoursRef = document.querySelector('[data-value="hours"]')
 const minsRef = document.querySelector('[data-value="mins"]')
 const secsRef = document.querySelector('[data-value="secs"]')
@@ -41,7 +41,6 @@ class Timer{
     return String(value).padStart(2, '0');
  }
 }
-
 const newTimer = new Timer({
   selector: '#timer-1',
   targetDate: new Date(2022, 0, 1, 0, 0, 0),
